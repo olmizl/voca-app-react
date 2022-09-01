@@ -15,7 +15,7 @@ export default function InsertVoca() {
     e.preventDefault();
     // console.log(eng.current.value, kor.current.value, day.current.value);
     axios
-      .post(`https://miji-voca-app.herokuapp.com/voca/add`, {
+      .post(`https://miji-voca-app.herokuapp.com/add`, {
         day: parseInt(day.current.value),
         eng: eng.current.value,
         kor: kor.current.value,
