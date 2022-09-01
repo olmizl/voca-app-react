@@ -1,0 +1,138 @@
+{
+  "days": [
+    {
+      "id": 1,
+      "day": 1
+    },
+    {
+      "id": 2,
+      "day": 2
+    },
+    {
+      "id": 3,
+      "day": 3
+    },
+    {
+      "day": 4,
+      "id": 4
+    },
+    {
+      "day": 5,
+      "id": 5
+    },
+    {
+      "day": 6,
+      "id": 6
+    },
+    {
+      "day": 7,
+      "id": 7
+    },
+    {
+      "day": 8,
+      "id": 8
+    },
+    {
+      "day": 9,
+      "id": 9
+    },
+    {
+      "day": 10,
+      "id": 10
+    },
+    {
+      "day": 11,
+      "id": 11
+    },
+    {
+      "day": 12,
+      "id": 12
+    }
+  ],
+  "voca": [
+    {
+      "day": 1,
+      "eng": "bird",
+      "kor": "새",
+      "id": 1,
+      "isDone": false
+    },
+    {
+      "kor": "사자",
+      "eng": "lion",
+      "isDone": false,
+      "id": 2,
+      "day": 2
+    },
+    {
+      "day": 2,
+      "eng": "tiger",
+      "kor": "호랑이",
+      "isDone": false,
+      "id": 2
+    },
+    {
+      "day": 2,
+      "eng": "cat",
+      "kor": "고양이",
+      "isDone": false,
+      "id": 3
+    },
+    {
+      "day": 3,
+      "eng": "tiger",
+      "kor": "호랑이",
+      "isDone": false,
+      "id": 4
+    },
+    {
+      "day": 4,
+      "eng": "rabbit",
+      "kor": "토끼",
+      "isDone": false,
+      "id": 5
+    },
+    {
+      "day": 5,
+      "eng": "bird",
+      "kor": "새",
+      "isDone": false,
+      "id": 6
+    },
+    {
+      "day": 6,
+      "eng": "dog",
+      "kor": "강아지",
+      "isDone": false,
+      "id": 7
+    },
+    {
+      "day": 3,
+      "eng": "bear",
+      "kor": "곰",
+      "isDone": false,
+      "id": 8
+    },
+    {
+      "day": 2,
+      "eng": "APPLE",
+      "kor": "사과",
+      "isDone": false,
+      "id": 9
+    },
+    {
+      "day": 2,
+      "eng": "APPLE",
+      "kor": "사과",
+      "isDone": false,
+      "id": 10
+    },
+    {
+      "kor": "사과",
+      "eng": "APPLE",
+      "isDone": false,
+      "id": 11,
+      "day": 2
+    }
+  ]
+}

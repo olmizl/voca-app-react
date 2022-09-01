@@ -1,0 +1,229 @@
+@import "vars";
+@import "mixin";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  color: #111;
+  background-color: #3c3838;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+$red: rgb(230, 155, 155);
+$blue: rgb(88, 96, 255);
+$green: rgb(45, 194, 45);
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  text-align: center;
+  font-size: 25px;
+  overflow: hidden;
+  h1 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include longShadow(#ccc, 50);
+  }
+}
+
+#menu {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  ul {
+    display: flex;
+    li {
+      margin-left: 10px;
+      a {
+        display: flex;
+        padding: 15px 30px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: 700;
+        &.day {
+          background-color: $red;
+        }
+        &.voca {
+          background-color: $blue;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  p {
+    padding: 15px 30px;
+    background-color: #fff;
+    font-weight: 300;
+    border-radius: 100px;
+    margin-top: 100px;
+    text-transform: uppercase;
+    strong {
+      font-weight: 700;
+    }
+  }
+}
+
+.container {
+  width: 1200px;
+  margin: 100px auto;
+  color: #fff;
+  .title {
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+}
+.dayBox {
+  .current {
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-top: 50px;
+    strong {
+      font-weight: 900;
+      position: relative;
+      padding-bottom: 10px;
+      margin-left: 10px;
+      display: inline-block;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -10px;
+        right: -10px;
+        bottom: 14px;
+        height: 10px;
+        background-color: $blue;
+        border-radius: 100px;
+        z-index: -1;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  .btn {
+    border: none;
+    outline: none;
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: $green;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.days {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  li {
+    margin: 5px;
+    a {
+      display: flex;
+      width: 120px;
+      height: 50px;
+      background-color: $blue;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-radius: 100px;
+    }
+  }
+}
+
+.vocas {
+  display: flex;
+  flex-direction: column;
+  li {
+    background-color: #fff;
+    height: 65px;
+    margin: 10px 0;
+    padding: 20px;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    color: #111;
+    position: relative;
+    transition: background-color 0.25s ease;
+    &.done {
+      background-color: #666;
+      .word {
+        opacity: 0.5;
+      }
+      .btns {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    }
+    .eng {
+      margin-left: 20px;
+      transition: all 0.25s ease;
+    }
+    .kor {
+      margin-left: 20px;
+    }
+    .word {
+      transition: all 0.25s ease;
+    }
+    .btns {
+      position: absolute;
+      margin-top: 0;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      .btn {
+        padding: 10px 20px;
+      }
+      .del {
+        margin-left: 10px;
+        background-color: $red;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
