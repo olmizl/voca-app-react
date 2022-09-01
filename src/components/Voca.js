@@ -18,20 +18,21 @@ export default function Voca(props) {
     //axios .post ()-> update
     //axios .post ()-> delete
     axios
-      .put(`https://miji-voca-app.herokuapp.com/voca/${props.id}`, {
+      .put(`http://127.0.0.1:8099/voca/${props.id}`, {
         isDone: !isDone,
       })
       .then((res) => {
-        if (res.data.update === "OK") {
+        if (res.data.update === "ok") {
           console.log("수정됨");
           setIsDone(!isDone);
         }
       });
   };
+
   const deleteVoca = () => {
     if (window.confirm("다 외웠나요? ")) {
       axios.delete(`https://miji-voca-app.herokuapp.com/voca/${props.id}`).then((res) => {
-        if (res.data.delete === "OK") {
+        if (res.data.delete === "ok") {
           setInfo({ id: -1 });
           //db에서 값을 지웠다는 결과를 받았기 떄문에 -1을 세팅하고 아래쪽에서return false를 통해화면에서 랜더링 안되게 만듦
         }
