@@ -10,7 +10,7 @@ export default function Day() {
   useEffect(() => {
     axios.get(`https://miji-voca-app.herokuapp.com/voca/${day}`).then((res) => {
       setVoca(res.data);
-      console.log(res.data);
+      // console.log(res.data);
     });
   }, []);
 

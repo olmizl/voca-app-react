@@ -18,7 +18,7 @@ export default function Voca(props) {
     //axios .post ()-> update
     //axios .post ()-> delete
     axios
-      .put(`http://127.0.0.1:8099/voca/${props.id}`, {
+      .put(`https://miji-voca-app.herokuapp.com/voca/${props.id}`, {
         isDone: !isDone,
       })
       .then((res) => {

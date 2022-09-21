@@ -21,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Days />} />
           <Route path="/insert/day" element={<InsertDay />} />
+
           <Route path="/insert/voca" element={<InsertVoca />} />
           <Route path="/day/:day" element={<Day />} />
         </Routes>

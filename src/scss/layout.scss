@@ -221,6 +221,12 @@ $green: rgb(45, 194, 45);
   }
 }
 
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
 @media all and (max-width: 1200px) {
   .container {
     width: 100%;

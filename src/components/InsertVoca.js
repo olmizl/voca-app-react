@@ -13,7 +13,6 @@ export default function InsertVoca() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    // console.log(eng.current.value, kor.current.value, day.current.value);
     axios
       .post(`https://miji-voca-app.herokuapp.com/voca/add`, {
         day: parseInt(day.current.value),
@@ -22,7 +21,6 @@ export default function InsertVoca() {
         isDone: false,
       })
       .then((res) => {
-        // console.log("입력되었습니다");
         alert("입력되었습니다");
         if (res.data.insert === "ok") {
           navigate(`/day/${day.current.value}`);

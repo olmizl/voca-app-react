@@ -24,6 +24,10 @@ export default function Days() {
           })}
         </ul>
       </div>
+
+      {/* <div className="deleteBtn">
+        <button>Delete Day</button>
+      </div> */}
     </>
   );
 }
