@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Voca
+react를 이용하여 영어단어를 추가, 삭제, 숨기기 기능을 할 수 있는 voca 단어장입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 주요기능
+[1] mongodb, node를 이용한 데이터 저장, 정보, 추가 기능 구현</br>
+[2] isvisible hook을 이용하여 hide/show 되는 기능 구현 </br>
+[3] toggleDone이라는 함수 부여하여 체크 박스 클릭시 새로운 style, 새로운 class 부여</br>
+[4] useRef Hook을 이용하여 새롭게 저장될 정보를 추가하고, 기존에 저장되어있는 정보 불러오는 기능 구현
 
-## Available Scripts
+### 사용한 SKILLS 
+REACT , CSS , JAVA-SCRIPT
 
-In the project directory, you can run:
+### 제작기간
+5일 소요
 
-### `npm start`
+### 제작 기여도
+100% (개인프로젝트)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 학습 내용
+react의 useNavigate, useEffect 등 다양한 Hook의 기본 사용법을 익히면서 기능을 함유하게 되었으며</br>
+데이터 저장을 위한 mongodb와의 연결을 통해 데이터 저장, 송출을 기반으로 새로운 내용의 추가, 삭제, 변경 등의 기능을 구현하게 되었습니다.
+ 
+ ## 메인 페이지
+![vocamain](https://user-images.githubusercontent.com/111400649/195801864-8bb84358-bfa7-41c0-89b5-0fa99d7d9217.PNG)
+ 
+ ## 기능 구현[1]
+![voca00](https://user-images.githubusercontent.com/111400649/195801836-716e504f-2bbb-470f-8b43-13a2b56c2378.PNG)
+mongodb와 node를 이용하여 데이터 저장, 정보, 추가 기능을 구현하였으며 받아진 데이터를 스타일에 맞춰 배열
+ 
+ ## 기능 구현 [2]
+![voca02](https://user-images.githubusercontent.com/111400649/195801857-8a5716dc-6a5a-4d12-9734-8fe687beb8c2.PNG)
+HIDDEN 버튼 클릭시 isvisible hook을 사용하여 show / hide 가 toggle되는 기능 구현
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 기능 구현 [3]
+![voca01](https://user-images.githubusercontent.com/111400649/195801854-e4315c02-80e1-473b-929b-dce43be43a34.PNG)
+외운 단어일 경우, 체크박스 클릭시 더이상 클릭 못하게 css를 주었으며 class를 새로 부여하여 다른 css style 부여
 
-### `npm test`
+## 기능 구현 [4]
+![voca04](https://user-images.githubusercontent.com/111400649/195801860-d48ead01-4c00-41d7-aceb-2860fd5538bf.PNG)
+![voca05](https://user-images.githubusercontent.com/111400649/195801861-ae3da652-8344-4bff-a585-fd7edb02e8bc.PNG)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+새로 추가할 내용을 입력하는 페이지에서 useRef Hook을 사용하여 입력된 정보를 보내고, 날짜를 받았으며 , SEND 버튼 클릭시 새로 추가된 정보가 있는 Day페이지로 이동하는 기능 구현
+ 
