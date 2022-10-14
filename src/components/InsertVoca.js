@@ -48,8 +48,8 @@ export default function InsertVoca() {
             <input type="text" name="" id="" placeholder="뜻을 적으세요 ex) 강아지" ref={kor} />
           </div>
           <div className="inputBox">
+            <label>단어를 추가할 날짜를 고르세요</label>
             <select name="" id="" ref={day}>
-              {/* option태그를 반복하는곳  */}
               {days.map((item, idx) => {
                 return (
                   <option value={item.day} key={idx}>
